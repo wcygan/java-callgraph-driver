@@ -1,7 +1,11 @@
 package edu.uic.cs398;
 
+import edu.uic.cs398.Book.Book;
+import edu.uic.cs398.Book.BookFactory;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Book book = BookFactory.getBook(1);
+        book.magic();
     }
 }
