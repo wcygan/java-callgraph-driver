@@ -1,11 +1,11 @@
 package edu.uic.cs398.Book.impl;
 
-import edu.uic.cs398.Book.Book;
+import edu.uic.cs398.Book.AbstractBook;
 
-public class EffectiveJava implements Book {
-    @Override
-    public String getTitle() {
-        return "Effective Java";
+public class EffectiveJava extends AbstractBook {
+
+    public EffectiveJava() {
+        super("Effective Java", "Bloch");
     }
 
     @Override
@@ -15,6 +15,6 @@ public class EffectiveJava implements Book {
 
     @Override
     public void magic() {
-
+        System.out.println("secrets!");
     }
 }
