@@ -21,6 +21,11 @@ public class AbstractBook implements Book {
 
     @Override
     public void magic() {
+        bazinga();
+    }
+
+    public void bazinga() {
 
     }
+
 }

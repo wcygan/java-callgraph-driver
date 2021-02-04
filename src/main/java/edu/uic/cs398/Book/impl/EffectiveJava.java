@@ -1,6 +1,7 @@
 package edu.uic.cs398.Book.impl;
 
 import edu.uic.cs398.Book.AbstractBook;
+import edu.uic.cs398.Book.Book;
 
 public class EffectiveJava extends AbstractBook {
 
@@ -16,5 +17,10 @@ public class EffectiveJava extends AbstractBook {
     @Override
     public void magic() {
         System.out.println("secrets!");
+    }
+
+    private String specialFunction(int a, Integer b, Book book) {
+        book.magic();
+        return String.format("%d ... %d", a, b);
     }
 }

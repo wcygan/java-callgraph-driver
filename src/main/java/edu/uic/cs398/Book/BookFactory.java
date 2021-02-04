@@ -15,6 +15,8 @@ public class BookFactory {
                 return new FluentPython();
             case 5:
                 return new Freakonomics();
+            case 6:
+                return new DesigningDataIntensiveApplications();
             default:
                 throw new Error("Unknown ISBN");
         }
