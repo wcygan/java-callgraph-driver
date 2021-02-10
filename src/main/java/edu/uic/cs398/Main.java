@@ -7,8 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
         Book book = BookFactory.getBook(1);
-        book.magic();
-        foo(2);
+        if (foo(2))
+            book.magic();
     }
 
     public static boolean foo(int n) {
